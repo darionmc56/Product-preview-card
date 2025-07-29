@@ -14,7 +14,7 @@ body {
 }
 
 .product-container {
-  height: 500px;
+  height: 545px;
   width: 700px;
   display: grid;
   background-color: hsl(0, 0%, 100%);
@@ -23,7 +23,59 @@ body {
 }
 
 img {
-  height: 500px;
+  height: 545px;
   width: 340px;
   border-radius: 10px 0 0 10px;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 1rem 2.6rem;
+  gap: 2rem;
+}
+
+.perfume-text,
+.perfume-description {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+}
+
+.perfume-name{
+  font-family:"Fraunces";
+  font-size: 2.4rem;
+}
+
+.perfume-description {
+  line-height: 1.6;
+}
+
+
+.price{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.discounted-price {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  align-self: center;
+}
+
+.btn-addCart {
+  padding: 1.1rem;
+  border-radius: 0.8rem;
+  border-style: none;
+  background-color: hsl(158, 36%, 37%);
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
 }
