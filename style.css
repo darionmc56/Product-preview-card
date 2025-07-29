@@ -79,3 +79,8 @@ img {
   color: hsl(0, 0%, 100%);
   font-weight: bold;
 }
+
+.btn-addCart:active{
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
