@@ -14,8 +14,8 @@ body {
 }
 
 .product-container {
-  height: 545px;
-  width: 700px;
+  min-height: 33rem;
+  max-width: 44rem;
   display: grid;
   background-color: hsl(0, 0%, 100%);
   grid-template-columns: 1fr 1fr;
@@ -23,8 +23,8 @@ body {
 }
 
 img {
-  height: 545px;
-  width: 340px;
+  display: block;
+  width: 100%;
   border-radius: 10px 0 0 10px;
 }
 
@@ -41,8 +41,8 @@ img {
   color: hsl(228, 12%, 48%);
 }
 
-.perfume-name{
-  font-family:"Fraunces";
+.perfume-name {
+  font-family: "Fraunces";
   font-size: 2.4rem;
 }
 
@@ -50,12 +50,10 @@ img {
   line-height: 1.6;
 }
 
-
-.price{
+.price {
   display: flex;
   gap: 1rem;
 }
-
 
 .discounted-price {
   font-family: "Fraunces";
@@ -80,7 +78,59 @@ img {
   font-weight: bold;
 }
 
-.btn-addCart:active{
+.btn-addCart:active {
   background-color: hsl(158, 42%, 18%);
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+   .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    height: 37rem;
+    width: 90vw;
+  }
+
+  img {
+    width: 100%;
+    height: 19rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: block;
+  }
+
+  .product-description {
+    margin: 0.7rem;
+    gap: 0.7rem;
+  }
+
+  .perfume-name {
+  font-size: 1.5rem;
+}
+
+.perfume-description {
+  line-height: 1;
+}
+
+.price {
+  gap: 0.7rem;
+}
+
+.discounted-price {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+
+.btn-addCart {
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  font-size: 0.6rem;
+  
+}
+  
 }
